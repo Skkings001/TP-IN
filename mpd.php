@@ -31,9 +31,9 @@ if (!$widevinePssh) {
     exit("Error: Could not extract PSSH or KID.");
 }
 if ($worldwide === "no") {
-    $baseUrl = dirname($dashUrl);
+    $baseUrl = dirname($dashUrl) . "/dash/";
 } else {
-    $baseUrl = "$serverScheme://$serverAddress"."$dirPath/$id/";
+    $baseUrl = "$serverScheme://$serverAddress"."$dirPath/$id/dash/";
 }
 
 $psshSet = $widevinePssh['pssh']; // get pssh
